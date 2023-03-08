@@ -32,6 +32,3 @@ is simply copied from the original file and put into the mp4 file. This is extre
 
 If you specify a re-encoding quality (between 0 and 51), encoding may take quite a while,
 depending on the length of the video and the processing power of your CPU.
-
-Have fun!
-Rijn Buve
