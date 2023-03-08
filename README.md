@@ -2,6 +2,13 @@
 
 This is a tiny Zsh script to help convert a video file from any format to mp4.
 
+## Prerequisites
+
+You need to have ffmpeg installed on your machine. On a Mac, you may want to use
+Brew to install it, like `brew install ffmpeg`.
+
+## Usage
+
 ```
 Usage: usage <quality> [-m] <input-file(s)> [<other-args>]
        usage copy      [-m] <input-file(s)> [<other-args>]
@@ -19,6 +26,12 @@ Examples:
        ffmpeg-convert.sh 25 my_movie.mov -vf "scale=-1:480"
        ffmpeg-convert.sh 25 my_movie.mov -vf "scale=iw/2:ih/2"
 ```
+
+So, if you specify **copy** on the commandline as a first parameter, the video stream
+is simply copied from the original file and put into the mp4 file. This is extremely fast.
+
+If you specify a re-encoding quality (between 0 and 51), encoding may take quite a while,
+depending on the length of the video and the processing power of your CPU.
 
 Have fun!
 Rijn Buve
