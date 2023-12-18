@@ -32,3 +32,12 @@ is simply copied from the original file and put into the mp4 file. This is extre
 
 If you specify a re-encoding quality (between 0 and 51), encoding may take quite a while,
 depending on the length of the video and the processing power of your CPU.
+
+Or you can use the even more simplified command:
+
+```
+ffmpeg-compress.sh <file>
+```
+
+This script will compress your video, but only if the compression makes sense (it's
+actually smaller than the original).
